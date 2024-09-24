@@ -18,3 +18,8 @@ def gange():
     prod = int(tall1) * int(tall2)
     print(f'{tall1} * {tall2} = {prod}')
     
+def dele():
+    tall1 = input("Skriv in første tallet: ")
+    tall2 = input("Skriv in andre tallet: ")
+    divy = int(tall1) / int(tall2)
+    print(f'{tall1} / {tall2} = {divy}')
