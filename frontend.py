@@ -28,7 +28,7 @@ def printMeny():
     print(Fore.CYAN + "╚═══════════════════════════════════════════════════╝")
 
     # Input 
-    menyvalg = input(Fore.YELLOW + "✨ Velg hva du vil regne med som du ikke kan bruke det lille hjernen din til (1-5): " + Fore.RESET)
+    menyvalg = input(Fore.YELLOW + "✨ Velg hva du vil regne med som du ikke kan bruke det lille hjernen din til jævla firkantfjes (1-5): " + Fore.RESET)
     utfoerMenyvalg(menyvalg)
 
 # følger brukerens input
