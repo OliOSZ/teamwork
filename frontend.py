@@ -2,23 +2,23 @@ from backend import *
 import os
 from colorama import Fore, Style, init
 
-# starter colorama
+# Initialize colorama for color usage in terminal
 init(autoreset=True)
 
-# gjør skjermen klar og clean
+# Function to clear the screen for a cleaner UI
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
 
-# legger til colorama for at de skal se bra ut
+# Function to print a visually appealing menu
 def printMeny():
     clear_screen()
 
-    # Menu top
+    # Menu Header
     print(Fore.CYAN + Style.BRIGHT + "╔═══════════════════════════════════════════════════╗")
     print(Fore.CYAN + Style.BRIGHT + "║" + Fore.YELLOW + "                  🌟 Kalkulator 🌟                   " + Fore.CYAN + "║")
     print(Fore.CYAN + "╚═══════════════════════════════════════════════════╝")
 
-    # Meny
+    # Menu Options
     print(Fore.CYAN + "╔═══════════════════════════════════════════════════╗")
     print(Fore.CYAN + "║" + Fore.GREEN + "  1. ➕  Legg sammen (pluss)                       " + Fore.CYAN + "║")
     print(Fore.CYAN + "║" + Fore.GREEN + "  2. ➖  Trekk fra   (minus)                       " + Fore.CYAN + "║")
@@ -27,11 +27,11 @@ def printMeny():
     print(Fore.CYAN + "║" + Fore.RED   + "  5. ❌  Avslutt                                 " + Fore.CYAN + "║")
     print(Fore.CYAN + "╚═══════════════════════════════════════════════════╝")
 
-    # Input 
+    # Input Prompt
     menyvalg = input(Fore.YELLOW + "✨ Velg operasjon fra menyen (1-5): " + Fore.RESET)
     utfoerMenyvalg(menyvalg)
 
-# følger brukerens input
+# Function to execute menu option based on user input
 def utfoerMenyvalg(valgtTall):
     if valgtTall == "1":
         leggSammen()
@@ -46,20 +46,19 @@ def utfoerMenyvalg(valgtTall):
         dele()
         pause_og_fortsett()
     elif valgtTall == "5":
-        bekreftelse = input(Fore.RED + "❓ Er du sikker på at du vil avslutte? J/N: " + Fore.RESET)
-        if bekreftelse.lower() == "j":
-            print(Fore.MAGENTA + "👋 Takk for at du brukte kalkulatoren. Ha en flott dag!" + Fore.RESET)
+        bekreftelse = input("Er du sikker på at du vil avslutte? J/N ")
+        if (bekreftelse == "J" or bekreftelse == "j"):
             exit()
         else:
             printMeny()
     else:
-        nyttForsoek = input(Fore.RED + "*** Ugyldig valg. Velg et tall mellom 1-5. Trykk for å fortsette *** " + Fore.RESET)
+        nyttForsoek = input("*** Ugyldig valg. Velg et tall mellom 1-4. Trykk for å fortsette *** ")
         printMeny()
 
-# pauser og returnerer til menyen
+# Function to pause and return to menu
 def pause_og_fortsett():
-    input(Fore.CYAN + "🔄 Trykk en tast for å fortsette..." + Fore.RESET)
+    input("-- Trykk en tast for å fortsette --")
     printMeny()
 
-# viser menyen
+# Start by displaying the menu
 printMeny()

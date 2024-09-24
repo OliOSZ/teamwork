@@ -1,25 +1,37 @@
 def leggSammen():
-    tall1 = input("Skriv in første tallet: ")
-    tall2 = input("Skriv in andre tallet: ")
-    sum = int(tall1) + int(tall2)
-    print(f'{tall1} + {tall2} = {sum}')
-    
-    
+    try:
+        tall1 = input("Skriv inn første tallet: ")
+        tall2 = input("Skriv inn andre tallet: ")
+        sum = int(tall1) + int(tall2)
+        print(f'{tall1} + {tall2} = {sum}')
+    except ValueError:
+        print("Feil: Du må skrive inn gyldige heltall.")
+        
 def trekkFra():
-    tall1 = input("Skriv in første tallet: ")
-    tall2 = input("Skriv in andre tallet: ")
-    diff = int(tall1) - int(tall2)
-    print(f'{tall1} - {tall2} = {diff}')
-
+    try:
+        tall1 = input("Skriv inn første tallet: ")
+        tall2 = input("Skriv inn andre tallet: ")
+        diff = int(tall1) - int(tall2)
+        print(f'{tall1} - {tall2} = {diff}')
+    except ValueError:
+        print("Feil: Du må skrive inn gyldige heltall.")
 
 def gange():
-    tall1 = input("Skriv in første tallet: ")
-    tall2 = input("Skriv in andre tallet: ")
-    prod = int(tall1) * int(tall2)
-    print(f'{tall1} * {tall2} = {prod}')
-    
+    try:
+        tall1 = input("Skriv inn første tallet: ")
+        tall2 = input("Skriv inn andre tallet: ")
+        prod = int(tall1) * int(tall2)
+        print(f'{tall1} * {tall2} = {prod}')
+    except ValueError:
+        print("Feil: Du må skrive inn gyldige heltall.")
+
 def dele():
-    tall1 = input("Skriv in første tallet: ")
-    tall2 = input("Skriv in andre tallet: ")
-    divy = int(tall1) / int(tall2)
-    print(f'{tall1} / {tall2} = {divy}')
+    try:
+        tall1 = input("Skriv inn første tallet: ")
+        tall2 = input("Skriv inn andre tallet: ")
+        divy = int(tall1) / int(tall2)
+        print(f'{tall1} / {tall2} = {divy}')
+    except ValueError:
+        print("Feil: Du må skrive inn tall. Tulling.")
+    except ZeroDivisionError:
+        print("Feil: Du kan ikke dele på null. Fjomp.")
