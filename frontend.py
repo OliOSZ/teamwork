@@ -28,7 +28,7 @@ def printMeny():
     print(Fore.CYAN + "╚═══════════════════════════════════════════════════╝")
 
     # Input 
-    menyvalg = input(Fore.YELLOW + "✨ Velg operasjon fra menyen (1-5): " + Fore.RESET)
+    menyvalg = input(Fore.YELLOW + "✨ Velg hva du vil regne med som du ikke kan bruke det lille hjernen din til (1-5): " + Fore.RESET)
     utfoerMenyvalg(menyvalg)
 
 # følger brukerens input
@@ -46,19 +46,19 @@ def utfoerMenyvalg(valgtTall):
         dele()
         pause_og_fortsett()
     elif valgtTall == "5":
-        bekreftelse = input(Fore.RED + "❓ Er du sikker på at du vil avslutte? J/N: " + Fore.RESET)
+        bekreftelse = input(Fore.RED + "❓Vil du avslutte brur? J/N: " + Fore.RESET)
         if bekreftelse.lower() == "j":
-            print(Fore.MAGENTA + "👋 Takk for at du brukte kalkulatoren. Ha en flott dag!" + Fore.RESET)
+            print(Fore.MAGENTA + "OK, fuck off da, det er ikke noa galt i å være en liten bitch" + Fore.RESET)
             exit()
         else:
             printMeny()
     else:
-        nyttForsoek = input(Fore.RED + "*** Ugyldig valg. Velg et tall mellom 1-5. Trykk for å fortsette *** " + Fore.RESET)
+        nyttForsoek = input(Fore.RED + "*** Ugyldig valg din dumme faen. Velg et tall mellom 1-5 og faenmeg gjør det, dette er ikke rakettforskning. Trykk for å fortsette *** " + Fore.RESET)
         printMeny()
 
 # pauser og returnerer til menyen
 def pause_og_fortsett():
-    input(Fore.CYAN + "🔄 Trykk en tast for å fortsette..." + Fore.RESET)
+    input(Fore.CYAN + "🔄 Trykk en tast for å fortsette. eller ikke. ditt valg, ikke mitt..." + Fore.RESET)
     printMeny()
 
 # viser menyen
