@@ -32,6 +32,6 @@ def dele():
         divy = int(tall1) / int(tall2)
         print(f'{tall1} / {tall2} = {divy}')
     except ValueError:
-        print("Feil: Du må skrive inn tall. Tulling.")
+        print("Feil: Du må skrive inn et helltall. Tulling.")
     except ZeroDivisionError:
         print("Feil: Du kan ikke dele på null. Fjomp.")
