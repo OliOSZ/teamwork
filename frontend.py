@@ -15,16 +15,16 @@ def printMeny():
 
     # Menu top
     print(Fore.CYAN + Style.BRIGHT + "╔═══════════════════════════════════════════════════╗")
-    print(Fore.CYAN + Style.BRIGHT + "║" + Fore.YELLOW + "                  🌟 Kalkulator 🌟                   " + Fore.CYAN + "║")
+    print(Fore.CYAN + Style.BRIGHT + "║" + Fore.YELLOW + "                  🌟 Kalkulator 🌟                 " + Fore.CYAN + "║")
     print(Fore.CYAN + "╚═══════════════════════════════════════════════════╝")
 
     # Meny
     print(Fore.CYAN + "╔═══════════════════════════════════════════════════╗")
-    print(Fore.CYAN + "║" + Fore.GREEN + "  1. ➕  Legg sammen (pluss)                     " + Fore.CYAN + "║")
-    print(Fore.CYAN + "║" + Fore.GREEN + "  2. ➖  Trekk fra   (minus)                     " + Fore.CYAN + "║")
-    print(Fore.CYAN + "║" + Fore.GREEN + "  3. ✖️  Gange                                   " + Fore.CYAN + "║")
-    print(Fore.CYAN + "║" + Fore.GREEN + "  4. ➗  Dele                                    " + Fore.CYAN + "║")
-    print(Fore.CYAN + "║" + Fore.RED   + "  5. ❌  Avslutt                                 " + Fore.CYAN + "║")
+    print(Fore.CYAN + "║" + Fore.GREEN + "  1. ➕  Legg sammen (pluss)                       " + Fore.CYAN + "║")
+    print(Fore.CYAN + "║" + Fore.GREEN + "  2. ➖  Trekk fra   (minus)                       " + Fore.CYAN + "║")
+    print(Fore.CYAN + "║" + Fore.GREEN + "  3. ✖️   Gange                                     " + Fore.CYAN + "║")
+    print(Fore.CYAN + "║" + Fore.GREEN + "  4. ➗  Dele                                      " + Fore.CYAN + "║")
+    print(Fore.CYAN + "║" + Fore.RED   + "  5. ❌  Avslutt                                   " + Fore.CYAN + "║")
     print(Fore.CYAN + "╚═══════════════════════════════════════════════════╝")
 
     # Input 
